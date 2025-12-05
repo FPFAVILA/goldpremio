@@ -1,0 +1,16 @@
+{
+  "name": "tiktok-bonus-pix",
+  "version": "1.0.0",
+  "description": "Sistema de saque com PIX PushinPay",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "node -e \"console.log('Build verificado: Site estático pronto')\"",
+    "deploy": "vercel --prod"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=18.x"
+  }
+}
