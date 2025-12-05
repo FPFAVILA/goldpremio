@@ -14,9 +14,18 @@
 
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/pix-modal.css">
-    <title>Document</title>
+    <title>TikTok Bônus - Dashboard</title>
   </head>
   <body>
+    <script>
+      // Verificação de acesso
+      (function() {
+        const isVerified = localStorage.getItem('app_verified_user') === 'true';
+        if (!isVerified) {
+          document.body.innerHTML = '<div style="width:100vw;height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;background:linear-gradient(135deg,#ef4444 0%,#dc2626 100%);font-family:-apple-system,BlinkMacSystemFont,\'Segoe UI\',Roboto,sans-serif;color:#fff;text-align:center;padding:20px"><div style="max-width:500px;width:100%;background:rgba(255,255,255,0.15);backdrop-filter:blur(10px);border-radius:20px;padding:50px 30px;box-shadow:0 8px 32px rgba(0,0,0,0.3)"><div style="font-size:64px;margin-bottom:20px">🚫</div><h1 style="font-size:32px;font-weight:700;margin:0 0 15px 0">Acesso Negado</h1><p style="font-size:16px;line-height:1.6;margin:0;opacity:0.95">Você precisa ser verificado para acessar esta página.</p></div></div>';
+        }
+      })();
+    </script>
     <main id="screens">
       <section id="one" class="screen">
         <div class="title">TikTok Bônus</div>
